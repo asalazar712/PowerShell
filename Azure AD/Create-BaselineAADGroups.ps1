@@ -37,9 +37,9 @@ else {
 
 #Authenticate to Microsoft Graph PowerShell
 
-Connect-mggraph -tenantid $tenantid -scope Directory.ReadWrite.All, Group.ReadWrite.All 
+Connect-mggraph -tenantid $tenantid -scope 'Directory.ReadWrite.All', 'Group.ReadWrite.All' 
 
-select-MgProfile -Name beta
+Select-MgProfile -Name beta
 
 
 #General Groups

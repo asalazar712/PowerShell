@@ -4,7 +4,7 @@ install-module -name Microsoft.Graph.DeviceManagement.Enrolment
 install-module -name Microsoft.Graph.DeviceManagement
 
 $permissions = find-mggraphCommand -command Get-MgDeviceManagementConfigurationPolicy | select -first 2 -ExpandProperty Permissions
-connect-mggraph -TenantId stratustechconsulting.com -Scopes $permissions.name
+connect-mggraph -TenantId <tenantID> -Scopes $permissions.name
 Get-MgDeviceManagementConfigurationPolicy
 
 
